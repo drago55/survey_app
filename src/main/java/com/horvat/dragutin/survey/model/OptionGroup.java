@@ -70,4 +70,5 @@ public class OptionGroup extends BaseEntity implements Comparable<OptionGroup>{
                 ", questionType=" + questionType +
                 '}';
     }
+
 }

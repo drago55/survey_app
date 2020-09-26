@@ -70,4 +70,5 @@ public class Answer extends BaseEntity {
                 ", user=" + user.getFirstName() +
                 '}';
     }
+
 }

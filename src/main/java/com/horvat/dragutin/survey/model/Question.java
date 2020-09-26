@@ -85,4 +85,5 @@ public class Question extends BaseEntity {
                 ", inputType=" + inputType +
                 '}';
     }
+
 }

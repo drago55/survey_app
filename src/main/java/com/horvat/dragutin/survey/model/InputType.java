@@ -38,4 +38,5 @@ public class InputType extends BaseEntity{
                 ", code=" + code +
                 '}';
     }
+
 }

@@ -48,4 +48,5 @@ public class User extends BaseEntity{
     public void seteMail(String eMail) {
         this.eMail = eMail;
     }
+
 }

@@ -65,4 +65,5 @@ public class Survey extends BaseEntity{
                 ", created=" + created +
                 '}';
     }
+
 }
