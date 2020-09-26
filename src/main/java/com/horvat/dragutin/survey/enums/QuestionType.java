@@ -1,0 +1,8 @@
+package com.horvat.dragutin.survey.enums;
+
+public enum QuestionType {
+
+    CLOSE_ENDED_QUESTIONS, DICHOTOMOUS_YES_NO, MULTIPLE_CHOICE, CHECKBOX,
+    RATING_SCALE, LIKERT_SCALE, MATRIX_QUESTIONS, OPEN_ENDED_QUESTIONS;
+
+}
