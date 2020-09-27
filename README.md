@@ -28,11 +28,11 @@ For building and running the application you need:
     
 - H2 database, to use H2 just uncomment H2 configuration and comment MySQL.
 
-##Application properties
+## Application properties
 
 ![application.properties](/properties_file.PNG)
  
-##ER diagram
+## ER diagram
 
 ![Application ER Diagram](/Survey_ER_Diagram.PNG)
 
