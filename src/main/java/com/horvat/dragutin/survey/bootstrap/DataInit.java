@@ -1,11 +1,14 @@
 package com.horvat.dragutin.survey.bootstrap;
 
+import com.horvat.dragutin.survey.controllers.SurveyController;
 import com.horvat.dragutin.survey.enums.EnumInputType;
 import com.horvat.dragutin.survey.enums.LikertScaleEnum;
 import com.horvat.dragutin.survey.enums.MatrixScaleEnum;
 import com.horvat.dragutin.survey.enums.QuestionType;
 import com.horvat.dragutin.survey.model.*;
 import com.horvat.dragutin.survey.repository.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,6 +18,8 @@ import java.util.Set;
 
 @Component
 public class DataInit implements CommandLineRunner {
+
+    private final Logger logger = LoggerFactory.getLogger(DataInit.class);
 
     private final InputTypeRepository inputTypeRepository;
     private final QuestionRepository questionRepository;
@@ -65,6 +70,8 @@ public class DataInit implements CommandLineRunner {
 
        //Creating survey
        createSurvey();
+
+        logger.info("Created mock survey {} ", survey);
 
     }
 
@@ -321,7 +328,7 @@ public class DataInit implements CommandLineRunner {
 
         Question closeEndedQuestion = new Question();
         closeEndedQuestion.setText("Why don't you eat ice cream  at Fictionals Ice Cream Parlour? \n (Chose at least one answer.)");
-        closeEndedQuestion.setAllowMultipleOptions(Boolean.FALSE);
+        closeEndedQuestion.setAllowMultipleOptions(Boolean.TRUE);
         closeEndedQuestion.setQuestionType(QuestionType.CLOSE_ENDED_QUESTIONS);
         closeEndedQuestion.setInputType(inputTypeRepository.findByCode(EnumInputType.CHECK_BOX.ordinal()));
 
