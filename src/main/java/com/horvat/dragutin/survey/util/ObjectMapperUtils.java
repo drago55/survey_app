@@ -12,10 +12,10 @@ public class ObjectMapperUtils {
 
 	private static final ModelMapper modelMapper = new ModelMapper();
 
-	/**
-	 * Model mapper property setting are specified in the following block. Default
-	 * property matching strategy is set to Strict see {@link MatchingStrategies}
-	 * Custom mappings are added using {@link ModelMapper#addMappings(PropertyMap)}
+	/*
+	  Model mapper property setting are specified in the following block. Default
+	  property matching strategy is set to Strict see {@link MatchingStrategies}
+	  Custom mappings are added using {@link ModelMapper#addMappings(PropertyMap)}
 	 */
 	static {
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.LOOSE);
