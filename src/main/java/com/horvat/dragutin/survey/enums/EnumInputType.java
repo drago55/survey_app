@@ -5,9 +5,9 @@ public enum EnumInputType {
     CHECK_BOX("CheckBox"), MULTI_CHECK_BOX("MultiCheckBox"),
     RADIO_BUTTON("RadioButton"), LETTER_BOX("LetterBox"), FREE_INPUT("FreeInput");
 
-    private String description;
+    private final String description;
 
-    private EnumInputType(String description) {
+    EnumInputType(String description) {
         this.description = description;
     }
 

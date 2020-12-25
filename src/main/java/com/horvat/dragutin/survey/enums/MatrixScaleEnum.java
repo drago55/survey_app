@@ -9,7 +9,7 @@ public enum MatrixScaleEnum {
 
     private String description;
 
-    private MatrixScaleEnum(String description) {
+    MatrixScaleEnum(String description) {
         this.description = description;
     }
 

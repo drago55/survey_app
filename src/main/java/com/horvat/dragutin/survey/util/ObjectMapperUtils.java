@@ -10,7 +10,7 @@ import org.modelmapper.convention.MatchingStrategies;
 
 public class ObjectMapperUtils {
 
-	private static ModelMapper modelMapper = new ModelMapper();
+	private static final ModelMapper modelMapper = new ModelMapper();
 
 	/**
 	 * Model mapper property setting are specified in the following block. Default
@@ -18,7 +18,6 @@ public class ObjectMapperUtils {
 	 * Custom mappings are added using {@link ModelMapper#addMappings(PropertyMap)}
 	 */
 	static {
-		modelMapper = new ModelMapper();
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.LOOSE);
 	}
 

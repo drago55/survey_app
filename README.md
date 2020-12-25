@@ -17,7 +17,7 @@ For building and running the application you need:
    mysql> create user 'springuser'@'%' identified by 'ThePassword'; -- Creates the user
    mysql> grant all on db_example.* to 'springuser'@'%'; -- Gives all privileges to the new user on the newly created database
     ```
-- set this properties for new user in application.properties file 
+- set these properties for new user in application.properties file 
     
     ```
        spring.jpa.hibernate.ddl-auto=update
@@ -45,7 +45,7 @@ Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/
 ```shell
 mvn spring-boot:run
 ```
-##URL for documentation and H2 in memory database
+##URL for a documentation and H2 in memory database
  - http://localhost:8080/swagger-ui.html
  - http://localhost:8080/h2-console/
 

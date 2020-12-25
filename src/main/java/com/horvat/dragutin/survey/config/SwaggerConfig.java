@@ -36,7 +36,7 @@ public class SwaggerConfig {
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder().title("Server API")
 				.description("Server API reference project for developers")
-				.contact(new Contact("Dragutin Hovat", "example.com",  "drago@test.com"))
+				.contact(new Contact("Dragutin Horvat", "example.com",  "drago@test.com"))
 				.licenseUrl("drago@test.com").version("1.0").build();
 	}
 

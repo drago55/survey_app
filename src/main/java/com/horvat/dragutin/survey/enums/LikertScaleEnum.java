@@ -7,9 +7,9 @@ public enum LikertScaleEnum {
     NOT_SO_SATISFIED("Not so satisfied"),
     NOT_SATISFIED_AT_ALL("Not satisfied ata all");
 
-    private String description;
+    private final String description;
 
-    private LikertScaleEnum(String description){
+    LikertScaleEnum(String description){
         this.description = description;
     }
 

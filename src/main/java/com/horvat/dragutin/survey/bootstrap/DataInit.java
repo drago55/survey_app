@@ -50,7 +50,7 @@ public class DataInit implements CommandLineRunner {
 
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         //Creating empty set for questions
         questions = new HashSet<>();
 
@@ -144,7 +144,7 @@ public class DataInit implements CommandLineRunner {
         optionsRepository.flush();
 
         Question openEndedQuestion = new Question();
-        openEndedQuestion.setText("Why don't you eat ice cream  at Fictionals Ice Cream Parlour?");
+        openEndedQuestion.setText("Why don't you eat ice cream  at Fictional Ice Cream Parlour?");
         openEndedQuestion.setAllowMultipleOptions(Boolean.FALSE);
         openEndedQuestion.setQuestionType(QuestionType.OPEN_ENDED_QUESTIONS);
         openEndedQuestion.setInputType(inputTypeRepository.findByCode(EnumInputType.FREE_INPUT.ordinal()));
@@ -327,7 +327,7 @@ public class DataInit implements CommandLineRunner {
         optionsRepository.flush();
 
         Question closeEndedQuestion = new Question();
-        closeEndedQuestion.setText("Why don't you eat ice cream  at Fictionals Ice Cream Parlour? \n (Chose at least one answer.)");
+        closeEndedQuestion.setText("Why don't you eat ice cream  at Fictional Ice Cream Parlour? \n (Chose at least one answer.)");
         closeEndedQuestion.setAllowMultipleOptions(Boolean.TRUE);
         closeEndedQuestion.setQuestionType(QuestionType.CLOSE_ENDED_QUESTIONS);
         closeEndedQuestion.setInputType(inputTypeRepository.findByCode(EnumInputType.CHECK_BOX.ordinal()));
